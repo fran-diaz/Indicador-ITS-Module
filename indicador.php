@@ -18,7 +18,7 @@ class indicador extends base_component implements components_interface {
                 <!-- Media Body -->
                 <div class="media-body ">
                 	<?php
-                	$aux = $_ITEC_temp -> query($this->cfg( 'contenido', 'query' ))->fetchAll();
+                	$aux = $this -> _ITExt -> query($this->cfg( 'contenido', 'query' ))->fetchAll();
                 	?>
                     <div class="display-3 font-weight-600 mb-1 init-counter"><?=$aux[0]['value']?></div>
                     <span class="d-block"><?=$this->cfg( 'contenido', 'info_text' )?></span>
