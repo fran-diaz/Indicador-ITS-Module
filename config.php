@@ -14,6 +14,17 @@ return [
 			'required' => false,
 			'value' => 'Texto',
 		],
+		'invisible_box' => [
+			'type' => 'checkbox',
+			'name' => '¿Caja transparente?',
+			'detail' => 'Caja visible o no visible',
+			'required' => false,
+			'default_values' => [
+				'true' => 'Si',
+				'false' => 'No',
+			],
+			'value' => 'false',
+		],
 		'ancho' => [
 			'type' => 'enum',
 			'name' => 'Anchura del componente',
