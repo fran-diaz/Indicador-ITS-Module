@@ -11,7 +11,7 @@ class indicador extends base_component implements components_interface {
         ob_start(); 
         ?>
             <!-- Media -->
-            <div class="h-100 media <?=$this->cfg( 'contenido', 'background_color' )?> <?=$this->cfg( 'contenido', 'font_color' )?>">
+            <div class="h-100 media <?=$this->cfg( 'contenido', 'background_color' )?> <?=$this->cfg( 'contenido', 'font_color' )?>" <?=( (! empty($this->cfg( 'contenido', 'remote_url' ) ))?'data-href="'.$this->cfg( 'contenido', 'remote_url' ).'"':'')?>>
 
                 <i class="mdi mdi-<?=$this->cfg( 'contenido', 'icon' )?> mdi__big mx-3 align-self-center"></i>
 
